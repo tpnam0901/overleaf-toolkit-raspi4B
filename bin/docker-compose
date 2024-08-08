@@ -128,7 +128,7 @@ function __main__() {
   export TLS_PRIVATE_KEY_PATH
 
   # shellcheck disable=SC2068
-  exec docker-compose -p "$project_name" ${compose_file_flags[@]} "$@"
+  exec docker compose -p "$project_name" ${compose_file_flags[@]} "$@"
 }
 
 __main__ "$@"
